@@ -1,0 +1,103 @@
+@import "tailwindcss";
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  --color-rp-primary: #DC2626;
+  --color-rp-primary-dark: #B91C1C;
+  --color-rp-bg: #F8FAFC;
+  --color-rp-surface: #FFFFFF;
+  --color-rp-border: #E2E8F0;
+  --color-rp-text: #1E293B;
+  --color-rp-muted: #64748B;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Light theme (default) */
+:root {
+  --rp-bg: #F8FAFC;
+  --rp-surface: #FFFFFF;
+  --rp-border: #E2E8F0;
+  --rp-text: #1E293B;
+  --rp-muted: #64748B;
+  --rp-primary: #DC2626;
+  --rp-primary-dark: #B91C1C;
+}
+
+/* Dark theme */
+.dark {
+  --rp-bg: #0F172A;
+  --rp-surface: #1E293B;
+  --rp-border: #334155;
+  --rp-text: #F1F5F9;
+  --rp-muted: #94A3B8;
+  --rp-primary: #EF4444;
+  --rp-primary-dark: #DC2626;
+}
+
+/* Card hover effect */
+.card-hover {
+  transition: all 0.2s ease;
+}
+.card-hover:hover {
+  transform: translateY(-2px);
+}
+
+/* Slide up animation */
+@keyframes slideUp {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+.slide-up {
+  animation: slideUp 0.3s ease forwards;
+}
+
+/* Slow zoom for hero */
+@keyframes slowZoom {
+  from { transform: scale(1); }
+  to { transform: scale(1.1); }
+}
+.animate-slow-zoom {
+  animation: slowZoom 20s ease-in-out infinite alternate;
+}
+
+/* Pulse zoom */
+@keyframes pulseZoom {
+  0%, 100% { transform: scale(1); opacity: 1; }
+  50% { transform: scale(1.05); opacity: 0.8; }
+}
+.animate-pulse-zoom {
+  animation: pulseZoom 2s ease-in-out infinite;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: #CBD5E1;
+  border-radius: 3px;
+}
+.dark ::-webkit-scrollbar-thumb {
+  background: #475569;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #94A3B8;
+}
+
+/* Selection */
+::selection {
+  background: rgba(220, 38, 38, 0.2);
+}

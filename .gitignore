@@ -1,8 +1,21 @@
 node_modules/
 build/
 dist/
+dist-android/
+dist-ios/
 coverage/
 .DS_Store
 *.log
+*.zip
+
+.vercel/*
+!.vercel/project.json
+.next/
+.expo/
+
+# Environnements : on ignore tout par défaut, sauf les .env "sûrs" (clé publique
+# Supabase uniquement) qu'on garde pour que le projet tourne direct après un clone.
 .env*
 !.env.example
+!app/rapid-pieces/.env
+!Mobile app/rapid-pieces-mobile/.env

@@ -1,7 +1,6 @@
 {
-  "name": "Gestion de tâches",
-  "description": "Une application simple et élégante de gestion de tâches avec filtres et priorités.",
+  "name": "Rapid Pièces - Site Vitrine",
+  "description": "Site vitrine officiel de l'application mobile Rapid Pièces : vente et livraison express de pièces détachées automobiles avec téléchargement iOS et Android.",
   "requestFramePermissions": [],
   "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
 }
-

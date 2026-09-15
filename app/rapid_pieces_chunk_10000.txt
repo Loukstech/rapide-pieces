@@ -1,0 +1,450 @@
+us. 
+
+--- PAGE 10 ---
+10 
+ 
+Revenue Stream 1 — Commission marketplace 
+Exemple : 
+Vente = 100 000 FCFA 
+Commission Rapid Pièces = 5 % 
+Revenu = 5 000 FCFA. La commission peut varier selon la catégorie. 
+Revenue Stream 2 — Frais de sourcing 
+Pour les pièces recherchées à l'étranger : 
+Frais de sourcing : 5 % à 15 % selon la complexité. 
+Revenue Stream 3 — Marge logistique 
+Rapid Pièces peut intégrer : 
+ 
+transport ; 
+ 
+manutention ; 
+ 
+consolidation ; 
+ 
+livraison ; 
+ 
+assurance. 
+Revenue Stream 4 — Premium vendeur 
+Le vendeur peut payer un abonnement mensuel pour obtenir : 
+ 
+meilleure visibilité ; 
+ 
+statistiques ; 
+ 
+catalogue avancé ; 
+ 
+badge vendeur vérifié ; 
+ 
+accès prioritaire aux demandes ; 
+ 
+outils de gestion du stock. 
+Mais ce modèle ne sera pas prioritaire au lancement. 
+Revenue Stream 5 — Rapid Business 
+Compte professionnel pour : 
+ 
+garages ; 
+ 
+entreprises ; 
+ 
+flottes ; 
+
+--- PAGE 11 ---
+11 
+ 
+ 
+sociétés de transport ; 
+ 
+concessionnaires ; 
+ 
+sociétés publiques. 
+Ces clients ont des besoins récurrents. 
+16. Un exemple économique 
+Supposons qu'après 12 mois Rapid Pièces atteigne : 
+500 transactions/mois 
+Panier moyen : 100 000 FCFA 
+GMV : 50 000 000 FCFA/mois 
+Avec une commission moyenne de 7 % : 
+3 500 000 FCFA/mois Soit : 42 000 000 FCFA/an 
+À cela peuvent s'ajouter : 
+ 
+sourcing international ; 
+ 
+logistique ; 
+ 
+abonnements vendeurs ; 
+ 
+services B2B. 
+17. Le modèle Asset-Light 
+Compte tenu de nos ressources limitées, je déconseille fortement de commencer avec : 
+ 
+grand magasin ; 
+ 
+grand stock ; 
+ 
+nombreux employés ; 
+ 
+flotte de véhicules ; 
+ 
+entrepôt coûteux. 
+Le modèle initial doit être :  
+Technology + Network + Transaction + Logistics Partners  
+et non : Inventory + Warehouses + Heavy Fixed Costs 
+Rapid Pièces doit posséder principalement : 
+ 
+la marque ; 
+
+--- PAGE 12 ---
+12 
+ 
+ 
+la technologie ; 
+ 
+la base de données ; 
+ 
+la relation client ; 
+ 
+les données transactionnelles ; 
+ 
+les procédures ; 
+ 
+le réseau de vendeurs ; 
+ 
+le réseau de fournisseurs internationaux. 
+18. MVP — Minimum Viable Product 
+Vous n'avez pas besoin de développer immédiatement une application complexe. 
+Phase 1 
+Commencer avec: WhatsApp Business + site web/mobile web + back-office simple 
+Le client peut envoyer : 
+ 
+photo ; 
+ 
+marque ; 
+ 
+modèle ; 
+ 
+année ; 
+ 
+référence. 
+L'équipe Rapid Pièces traite la demande. 
+Les vendeurs répondent via WhatsApp ou une interface simple. 
+Cela permet de tester le marché avec un investissement minimal. 
+19. Phase 2 — Application 
+Après validation du modèle : 
+Application acheteur 
+Fonctions : 
+ 
+recherche ; 
+ 
+demande de pièce ; 
+ 
+photo ; 
+ 
+VIN ; 
+ 
+comparaison ; 
+ 
+commande ; 
+ 
+paiement ; 
+
+--- PAGE 13 ---
+13 
+ 
+ 
+suivi. 
+Application vendeur 
+Fonctions : 
+ 
+demandes ; 
+ 
+offres ; 
+ 
+catalogue ; 
+ 
+stock ; 
+ 
+commandes ; 
+ 
+chiffre d'affaires. 
+20. Phase 3 — Intelligence artificielle 
+Une fois suffisamment de données accumulées, Rapid Pièces peut introduire l'IA. 
+AI Part Finder 
+Le client photographie une pièce. 
+L'IA propose : 
+« Il s'agit probablement d'un alternateur Toyota Corolla 2014–2018. » 
+Puis : « Voici les références compatibles. » 
+Puis : « 7 vendeurs proposent cette pièce. » 
+Puis : « Prix : 55 000 à 92 000 FCFA. » 
+Puis : « Offre recommandée : 63 000 FCFA — vendeur vérifié — livraison aujourd'hui. » 
+21. Le système de classement des offres 
+Ne classez pas uniquement par prix. 
+L'algorithme doit calculer un : 
+Rapid Score 
+Exemple : 
+Rapid Score = 
+
+--- PAGE 14 ---
+14 
+ 
+30 % Prix 
+25 % Qualité 
+20 % Disponibilité 
+15 % Réputation vendeur 
+10 % Délai de livraison 
+Ainsi, le vendeur le moins cher n'est pas nécessairement le premier. 
+L'objectif est de proposer : la meilleure offre globale. 
+22. Système de confiance 
+La confiance sera probablement le facteur critique du projet. 
+Chaque vendeur doit avoir un profil comprenant : 
+Rapid Seller Score 
+ 
+identité vérifiée ; 
+ 
+ancienneté ; 
+ 
+nombre de transactions ; 
+ 
+taux d'annulation ; 
+ 
+taux de retour ; 
+ 
+conformité des produits ; 
+ 
+avis clients ; 
+ 
+rapidité de réponse. 
+Les meilleurs vendeurs obtiennent : VERIFIED SELLER 
+Puis éventuellement : RAPID PREMIUM SELLER 
+23. Protection contre les faux produits 
+Rapid Pièces doit progressivement construire un système de contrôle. 
+Pour certaines catégories : 
+ 
+photo obligatoire ; 
+ 
+référence obligatoire ; 
+ 
+facture fournisseur ; 
+ 
+marque ; 
+ 
+origine ; 
+ 
+numéro de série lorsque disponible ; 
+ 
+garantie. 
+Pour les pièces sensibles, Rapid Pièces peut effectuer une inspection avant livraison. 
+
+--- PAGE 15 ---
+15 
+ 
+24. Le modèle de paiement 
+Le paiement peut évoluer vers un système de type escrow commercial, sous réserve de la 
+structuration juridique et du partenaire de paiement approprié. 
+Schéma : 
+Client paie 
+↓ 
+Rapid Pièces / partenaire de paiement 
+↓ 
+Commande confirmée 
+↓ 
+Vendeur expédie 
+↓ 
+Client reçoit 
+↓ 
+Transaction validée 
+↓ 
+Vendeur payé 
+Cela permet de réduire le risque pour l'acheteur et d'augmenter la confiance. 
+25. La logistique 
+Rapid Pièces ne devrait pas immédiatement créer sa propre flotte. 
+Il faut travailler avec : 
+ 
+coursiers ; 
+ 
+transporteurs ; 
+ 
+sociétés de livraison ; 
+ 
+transporteurs interurbains ; 
+ 
+partenaires Nigeria–Bénin ; 
+ 
+freight forwarders ; 
+ 
+partenaires internationaux. 
+Rapid Pièces devient le chef d'orchestre logistique. 
+Le marché béninois de l'e-commerce et de la logistique digitale évolue justement vers des 
+solutions de transport, entreposage, gestion des données et fulfillment, ce qui est cohérent avec 
+ce positionnement. 
+26. Organisation opérationnelle au lancement 
+
+--- PAGE 16 ---
+16 
+ 
+L'entreprise peut démarrer avec une équipe extrêmement réduite. 
+Fondateur / CEO 
+Stratégie, partenariats, financement. 
+ 
+Operations Manager 
+Gestion des demandes et fournisseurs. 
+ 
+Technology/Product 
+Application, données, automatisation. 
+ 
+Business Development 
+Recrutement des vendeurs. 
+ 
+Sourcing Agent Nigeria 
+Recherche et achat. 
+ 
+Logistics Partner 
+Externalisé. 
+Il n'est pas nécessaire de recruter immédiatement une grande équipe. 
+27. Acquisition des vendeurs 
+Le lancement doit commencer par une campagne terrain. 
+Objectif initial : 100 vendeurs dans les principales zones commerciales de Cotonou. Un 
+commercial visite les magasins. 
+Message : « Nous ne vous demandons pas de changer votre magasin. Nous vous apportons 
+simplement davantage de clients. » 
+Inscription gratuite. 
+Le vendeur renseigne : 
+ 
+nom ; 
+ 
+téléphone ; 
+ 
+localisation ; 
+ 
+marques ; 
+ 
+catégories ; 
+ 
+spécialités. 
+28. Acquisition des acheteurs 
+Les premiers utilisateurs doivent être principalement : 
+
+--- PAGE 17 ---
+17 
+ 
+1. Mécaniciens 
+Ils connaissent précisément les pièces et génèrent des commandes récurrentes. 
+ 
+2. Garages 
+Très forte valeur potentielle. 
+ 
+3. Chauffeurs professionnels 
+Taxi, transport, livraison. 
+ 
+4. Entreprises possédant des véhicules 
+ 
+5. Flottes 
+ 
+6. Revendeurs 
+ 
+7. Particuliers 
+Je commencerais donc B2B/B2B2C avant B2C massif. 
+29. Le rôle stratégique des mécaniciens 
+Les mécaniciens sont probablement votre meilleur canal d'acquisition. 
+Un mécanicien peut devenir : 
+Rapid Partner 
+Lorsqu'un client vient au garage avec un problème : 
+Le mécanicien identifie la pièce. 
+Il utilise Rapid Pièces. 
+Rapid Pièces trouve la pièce. 
+Le mécanicien peut recevoir une commission ou bénéficier de conditions commerciales 
+préférentielles. Nous ainsi créons ainsi un réseau de prescripteurs. 
+30. Le modèle « Rapid Partner » 
+Trois catégories de partenaires : 
+Rapid Seller 
+Vendeur de pièces. 
+
+--- PAGE 18 ---
+18 
+ 
+Rapid Mechanic 
+Mécanicien/garage. 
+Rapid Fleet 
+Entreprise possédant plusieurs véhicules. 
+Cela permet de créer un écosystème. 
+31. Stratégie de lancement géographique 
+Nous ne commençons pas par tout le Bénin. 
+Étape 1 
+Cotonou + Abomey-Calavi 
+ 
+Étape 2 
+Porto-Novo 
+ 
+Étape 3 
+Ouidah / Bohicon / Parakou 
+ 
+Étape 4 
+Expansion régionale : 
+Togo → Nigeria → Côte d'Ivoire → Ghana 
+Le Nigeria est particulièrement intéressant comme corridor d'approvisionnement. 
+32. Pourquoi Rapid Pièces peut devenir plus grand qu'un simple 
+marketplace 
+Le véritable actif stratégique sera la base de données automobile. 
+Imaginez que dans trois ans Rapid Pièces connaisse : 100 000 véhicules et 500 000 transactions. 
+La plateforme saura : 
+ 
+quelle Toyota utilise quelle pièce ; 
+ 
+quelles pièces cassent le plus ; 
+ 
+quels modèles sont les plus présents ; 
+ 
+quels fournisseurs proposent les meilleurs prix ; 
+ 
+quelles pièces deviennent rares ; 
+ 
+quelles pièces doivent être importées ; 
+ 
+quelle ville consomme quelle pièce. 
+
+--- PAGE 19 ---
+19 
+ 
+Cette information permet ensuite de passer du modèle : 
+Marketplace à : Marketplace + Procurement + Logistics + Data Intelligence 
+33. Le modèle économique à long terme 
+Rapid Pièces peut évoluer vers cinq plateformes intégrées : 
+RAPID MARKET 
+Marketplace local. 
+ 
+RAPID SOURCING 
+Recherche internationale. 
+ 
+RAPID LOGISTICS 
+Acheminement. 
+ 
+RAPID GARAGE 
+Réseau de garages et mécaniciens. 
+ 
+RAPID DATA 
+Intelligence du marché automobile. 
+34. Positionnement de marque 
+Je recommande de positionner la marque autour de trois promesses : 
+TROUVER. COMPARER. RECEVOIR. 
+Où : Rapid Pièces — La pièce qu'il vous faut, au meilleur choix, au bon endroit. 
+Autre possibilité : Rapid Pièces — Trouvez. Comparez. Commandez. 
+35. Proposition de valeur centrale 
+Pour l'acheteur 
+Une seule demande pour trouver plusieurs offres. 
+ 
+Pour le vendeur 
+Une seule plateforme pour accéder à davantage de clients. 
+ 
+Pour le garage 
+Une solution rapide pour trouver les pièces de vos clients. 
+ 
+Pour l'entreprise 
+Une plateforme pour gérer et optimiser les achats de pièces de votre flotte. 
+
+--- PAGE 20 ---
+20 
+ 
+ 
+Pour le fournisseur international 
+Un accès direct à la demande automobile d'Afrique de l'Ouest. 
+36. Le véritable avantage concurrentiel 
+Il ne faut pas chercher à gagner uniquement par le prix. 
+Notre avantage

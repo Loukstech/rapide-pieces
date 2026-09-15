@@ -1,0 +1,49 @@
+{
+  "expo": {
+    "name": "Rapid Pièces",
+    "slug": "rapid-pieces-mobile",
+    "scheme": "rapidpieces",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "light",
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "com.rapidpieces.mobile"
+    },
+    "android": {
+      "package": "com.rapidpieces.mobile",
+      "adaptiveIcon": {
+        "backgroundColor": "#E6F4FE",
+        "foregroundImage": "./assets/android-icon-foreground.png",
+        "backgroundImage": "./assets/android-icon-background.png",
+        "monochromeImage": "./assets/android-icon-monochrome.png"
+      },
+      "predictiveBackGestureEnabled": false
+    },
+    "web": {
+      "favicon": "./assets/favicon.png"
+    },
+    "plugins": [
+      "expo-secure-store",
+      [
+        "expo-image-picker",
+        {
+          "photosPermission": "Rapid Pièces a besoin d'accéder à vos photos pour joindre une image de la pièce recherchée."
+        }
+      ]
+    ],
+    "extra": {
+      "eas": {
+        "projectId": "54a6c1c9-8dd9-4348-b89f-62d3b9b817ab"
+      }
+    },
+    "owner": "loukstech",
+    "runtimeVersion": {
+      "policy": "appVersion"
+    },
+    "updates": {
+      "url": "https://u.expo.dev/54a6c1c9-8dd9-4348-b89f-62d3b9b817ab"
+    }
+  }
+}

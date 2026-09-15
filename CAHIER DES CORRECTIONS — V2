@@ -1,0 +1,873 @@
+CAHIER DES CORRECTIONS — V2
+Application de vente de pièces automobiles — Rapid Pièces
+1. 🌍 Classement des offres
+
+Les offres doivent être séparées en deux catégories :
+
+Offres locales
+Offres internationales
+
+L’objectif est de permettre de distinguer clairement les offres provenant du même pays et celles provenant de l’international.
+
+2. ⏱️ Expiration des offres
+
+Les offres reçues par un acheteur doivent avoir une durée de validité de 24 heures.
+
+Après 24 heures
+
+Si l'acheteur n'a pas répondu à une offre :
+
+l'offre devient expirée ;
+elle disparaît de la liste des offres actives ;
+elle doit rester accessible temporairement dans l'historique afin que l'utilisateur sache qu'il avait reçu cette offre.
+Après 48 heures
+
+Une offre expirée depuis 24 heures supplémentaires doit être :
+
+supprimée complètement du système actif ;
+elle ne doit plus être récupérable comme offre active.
+3. 🔄 Renouvellement d'une demande
+
+Lorsqu'un acheteur a lancé une demande et qu'il n'a trouvé aucune pièce après les 24 heures de validité :
+
+L'application peut lui proposer, le lendemain, de :
+
+Renouveler sa demande
+
+Le renouvellement doit être proposé à l'acheteur.
+
+Il ne s'agit pas d'une reconduction automatique.
+
+4. 🔔 Notification des demandes expirées
+
+Lorsqu'une demande expire, l'expiration doit être signalée dans la cloche de notification :
+
+Chez l'acheteur
+
+Il doit être informé que sa demande est arrivée à expiration.
+
+Chez le vendeur
+
+Les vendeurs concernés doivent également être informés de l'expiration de la demande.
+
+5. 🔎 Tri des pièces
+
+Les pièces doivent pouvoir être triées/recherchées selon différents critères.
+
+Notamment :
+
+Marque
+Qualité
+et autres critères pertinents disponibles dans l'application.
+6. 🚗 Marque spécifique dans une demande
+
+Dans le formulaire de demande de l'acheteur, ajouter une possibilité de préciser une marque spécifique recherchée.
+
+Cette information est :
+
+optionnelle ;
+l'acheteur peut la renseigner s'il recherche obligatoirement une marque précise ;
+il peut également ne rien sélectionner.
+7. 💳 VIN obligatoire selon le montant
+
+Lors de la validation du paiement :
+
+Si le montant est supérieur à 50 000 FCFA
+
+Le système doit rendre obligatoire :
+
+Numéro VIN / numéro de châssis
+
+L'acheteur ne pourra pas finaliser le paiement sans renseigner ce numéro.
+
+Si le montant est inférieur ou égal à 50 000 FCFA
+
+Le VIN/numéro de châssis n'est pas obligatoire selon cette règle.
+
+8. 🎨 État des offres après validation d'une offre
+
+Lorsqu'un acheteur valide une offre :
+
+Offre choisie
+
+L'offre sélectionnée doit être mise en évidence, notamment en vert.
+
+Elle doit afficher son état/statut.
+
+Exemple de progression :
+
+Paiement en cours → Payé → Livraison en cours → Livré
+
+Autres offres
+
+Toutes les autres offres liées à la même demande :
+
+ne doivent pas disparaître ;
+doivent être gelées ;
+doivent être affichées en gris ;
+doivent porter une indication du type :
+
+Terminé
+
+9. 🚫 Blocage des autres réponses
+
+Une fois qu'une offre est acceptée pour une demande :
+
+les autres vendeurs ne peuvent plus répondre à cette demande ;
+les offres existantes des autres vendeurs sont gelées ;
+toute tentative de nouvelle réponse doit être bloquée.
+
+Le système doit afficher un message indiquant que la demande a déjà été satisfaite / que l'acheteur a déjà trouvé ce qu'il recherchait.
+
+10. 🔔 Notification aux vendeurs
+
+Lorsque l'acheteur valide une offre :
+
+Les vendeurs concernés doivent être informés que :
+
+L'acheteur a déjà trouvé la pièce / la demande a été satisfaite.
+
+Le but est d'éviter qu'un vendeur continue à travailler sur une demande déjà finalisée.
+
+11. 📊 Score / notation du vendeur
+
+Chaque vendeur possède une notation.
+
+La notation doit :
+
+commencer à 5 étoiles ;
+pouvoir diminuer progressivement ;
+diminuer en fonction du comportement et des erreurs du vendeur.
+
+Actuellement, la notation commence à zéro : cela doit être corrigé.
+
+12. ⭐ Rating du vendeur vs score de l'offre
+
+Il faut distinguer deux éléments.
+
+Rating du vendeur
+
+Le vendeur est évalué avec des étoiles.
+
+Exemple :
+
+⭐⭐⭐⭐⭐
+
+Le rating reflète notamment son comportement et son historique.
+
+Score de l'offre
+
+L'offre elle-même possède une note chiffrée.
+
+Exemples possibles :
+
+10/10
+90/100
+etc.
+
+Ce score peut être déterminé notamment selon :
+
+le prix ;
+la qualité ;
+le délai/temps de réponse ;
+la pertinence de l'offre ;
+d'autres critères définis par le système.
+
+Donc :
+
+Vendeur = étoiles
+Offre = score chiffré
+
+13. ⚠️ Sanctions liées au rating vendeur
+
+Le système doit prévoir des sanctions lorsque la note du vendeur descend.
+
+Règle indiquée :
+
+à 3 étoiles, le vendeur atteint un seuil critique et le compte doit faire l'objet d'une suspension/avertissement selon la logique définie ;
+à moins de 2 étoiles, le système doit supprimer le compte vendeur.
+
+⚠️ Le comportement exact à 3 étoiles devra être verrouillé techniquement avec le client : avertissement seul ou suspension immédiate.
+
+14. 🏷️ Code d'identification des utilisateurs
+
+Chaque demande doit être associée à un code d'identification.
+
+Le système doit afficher un code pour :
+
+Acheteur
+
+Exemple :
+
+Acheteur X
+
+Vendeur
+
+Exemple :
+
+Vendeur Y
+
+Le principe est d'utiliser un code d'identification plutôt que d'exposer directement certaines informations personnelles.
+
+La méthode exacte de génération des codes sera définie ultérieurement.
+
+15. 📱 Vérification du numéro de téléphone
+
+Ajouter une vérification du numéro lors de l'inscription.
+
+Fonctionnement
+
+Après la saisie du numéro :
+
+Le système envoie un code OTP.
+L'utilisateur saisit le code reçu.
+Le système vérifie que le numéro fonctionne et que l'utilisateur y a accès.
+Le compte peut ensuite poursuivre son processus d'inscription.
+16. 🔐 Confirmation du mot de passe
+
+Dans le formulaire d'inscription, ajouter :
+
+Confirmation du mot de passe
+
+Le formulaire doit donc contenir :
+
+Mot de passe
+Confirmation du mot de passe
+
+Les deux valeurs doivent correspondre.
+
+17. 🧩 Options « Autre » dans les catégories
+
+Dans les catégories concernées par :
+
+Marque
+Pièce
+
+Ajouter une option :
+
+Autre
+
+Cette option permet à l'utilisateur de saisir manuellement une marque ou une pièce qui n'existe pas dans la liste.
+
+18. 📚 Options « Toutes »
+
+Ajouter également des possibilités du type :
+
+Marques
+
+Toutes les marques
+
+Pièces
+
+Toutes les pièces
+
+Cela permet notamment à un vendeur ou utilisateur de sélectionner l'ensemble des marques ou l'ensemble des pièces.
+
+19. 🔄 « Condition » devient « État de la pièce »
+
+Dans les différentes interfaces où l'on trouve :
+
+Condition
+
+Le libellé doit être remplacé par :
+
+État de la pièce
+
+Les choix sont :
+
+Occasion
+Neuf
+20. 📊 Données statistiques connectées à la base de données
+
+Les statistiques actuellement présentes sur la plateforme semblent être des données statiques.
+
+Cela doit être corrigé.
+
+Toutes les données affichées doivent être reliées à la base de données réelle.
+
+Cela concerne notamment :
+
+statistiques ;
+pourcentages ;
+compteurs ;
+chiffres ;
+indicateurs ;
+données du dashboard ;
+autres données dynamiques.
+
+Aucune statistique importante ne doit rester une valeur fictive/statique.
+
+21. 🔑 Changement de mot de passe
+
+Ajouter une fonctionnalité permettant à l'utilisateur de :
+
+Changer son mot de passe
+
+Le système doit prévoir le processus de changement de mot de passe dans l'espace utilisateur.
+
+22. 📈 « Conformité » devient « Satisfaction client »
+
+Sur la plateforme, le libellé :
+
+Conformité
+
+doit être remplacé par :
+
+Satisfaction client
+
+23. 🔄 « Retour » devient « Retour de pièce »
+
+Le libellé :
+
+Retour
+
+doit être remplacé par :
+
+Retour de pièce
+
+24. 🔃 Bouton de rafraîchissement
+
+Ajouter en haut de l'application un petit bouton permettant de :
+
+Rafraîchir / actualiser la page
+
+L'utilisateur doit pouvoir actualiser les données en un seul clic.
+
+25. 🚚 Suppression du « mode de livraison » dans le formulaire d'offre
+
+Lorsqu'un vendeur répond à une demande et crée une offre, il existe actuellement un champ :
+
+Mode de livraison
+
+Ce champ doit être supprimé du formulaire de création d'offre.
+
+⚠️ Cela concerne le champ du formulaire d'offre, pas nécessairement toute la fonctionnalité de livraison de l'application.
+
+26. 📤 Message après transmission d'une offre
+
+Lorsqu'un vendeur valide et envoie une offre, afficher un message confirmant l'envoi.
+
+Texte demandé :
+
+« Nous avons transmis votre offre à l'acheteur. »
+
+27. 📸 Photos dans le formulaire de demande
+
+Ajouter la possibilité pour l'acheteur d'ajouter des photos dans sa demande.
+
+Nombre de photos
+
+Minimum :
+
+1 photo
+
+Maximum :
+
+4 photos
+
+28. 🖼️ Affichage des photos chez le vendeur
+
+Lorsqu'un vendeur reçoit une demande :
+
+les photos doivent être visibles ;
+l'ancienne icône utilisée actuellement doit être remplacée par la photo.
+
+Lorsque le vendeur clique sur la photo :
+
+➡️ ouvrir une fenêtre/visionneuse.
+
+La visionneuse doit permettre de consulter les différentes photos en faisant glisser :
+
+Photo 1 → Photo 2 → Photo 3 → Photo 4
+
+29. ✏️ Modification et annulation
+Côté vendeur
+
+Le vendeur peut :
+
+modifier son offre ;
+annuler son offre ;
+
+tant que le paiement n'a pas été effectué.
+
+Côté acheteur
+
+L'acheteur peut :
+
+modifier ;
+annuler ;
+
+sa commande/offre selon le processus, avant le paiement.
+
+Après paiement
+
+Une fois le paiement effectué :
+
+la commande est verrouillée.
+
+L'utilisateur ne peut plus simplement annuler/modifier la commande selon cette règle.
+
+30. ⏰ Paiement non effectué après 48 heures
+
+Lorsqu'un acheteur valide une offre mais ne paie pas :
+
+Délai
+
+Il dispose de :
+
+48 heures
+
+pour effectuer le paiement.
+
+Après 48 heures
+
+Si le paiement n'est pas effectué :
+
+l'offre/commande est gelée ;
+le vendeur est notifié ;
+l'acheteur est soumis aux règles de sanction prévues.
+31. 🚫 Sanction pour paiement expiré
+
+Lorsqu'un paiement expire parce que l'acheteur n'a pas payé dans le délai prévu :
+
+L'acheteur reçoit une sanction.
+
+Sanction
+
+Pendant :
+
+7 jours
+
+l'acheteur ne peut pas :
+
+envoyer une nouvelle demande ;
+lancer une nouvelle demande de pièce.
+32. 🔓 Offre ouverte ou fermée
+
+Lorsqu'un vendeur crée une offre, il doit pouvoir choisir son mode de négociation :
+
+Offre ouverte
+
+Le vendeur accepte la négociation.
+
+L'acheteur peut donc faire une contre-offre.
+
+Offre fermée
+
+Le vendeur ne souhaite pas négocier.
+
+L'acheteur ne peut donc pas faire de contre-offre.
+
+33. 🧾 Informations visibles par l'acheteur après réception d'une offre
+
+Lorsqu'une offre est envoyée à l'acheteur, celui-ci doit voir une interface/page présentant notamment :
+
+Nom de la boutique
+Nom de la demande
+Prix
+Qualité
+Livraison rapide pièces
+Frais d'importation
+Frais de livraison
+Moyens de paiement
+Rapide Pièces Garantie
+
+Le nom :
+
+Rapide Now
+
+doit être remplacé par :
+
+Rapide Pièces
+
+34. 🚚 Livraison
+
+Pour le moment, dans la partie concernée :
+
+Livraison = 0
+
+Cette valeur doit être utilisée temporairement jusqu'à ce que les autres paramètres de livraison soient définis.
+
+35. 🛡️ Rapide Pièces Garantie
+
+Dans la page de l'offre, le bloc :
+
+Rapide Pièces Garantie
+
+doit être cliquable.
+
+Lorsqu'on clique dessus :
+
+➡️ l'utilisateur est envoyé vers une page dédiée à la garantie.
+
+36. 📄 Page Rapide Pièces Garantie
+
+Sur cette page, les informations de la pièce et du montant doivent être automatiquement récupérées depuis la commande.
+
+En haut de la page, afficher notamment :
+
+nom de la pièce ;
+informations importantes de la pièce ;
+montant/prix.
+37. 🛡️ Calcul automatique de la garantie
+
+La page de garantie doit contenir des champs permettant notamment de choisir une année de garantie.
+
+Lorsque l'utilisateur choisit l'année :
+
+➡️ le système calcule automatiquement le prix de la garantie.
+
+Le calcul doit tenir compte :
+
+de l'année choisie ;
+du montant de la pièce.
+
+La formule exacte sera définie ensuite.
+
+38. 💰 Numéro de paiement du vendeur
+
+Dans le formulaire d'inscription du vendeur, ajouter un champ obligatoire :
+
+Numéro de réception des paiements
+
+Ce numéro sert à recevoir l'argent dû au vendeur.
+
+Confidentialité
+
+Ce numéro :
+
+est obligatoire ;
+doit être accessible au Super Admin ;
+ne doit pas être visible par les acheteurs.
+
+L'objectif est que Rapid Pièces puisse utiliser ce numéro pour payer le vendeur.
+
+39. 📜 Conditions générales de vente
+
+Dans le formulaire d'enregistrement vendeur, ajouter un accès aux :
+
+Conditions générales de vente
+
+Le lien doit être :
+
+souligné ;
+en bleu ;
+clairement identifiable comme un lien cliquable.
+40. 🏠 Dashboard vendeur — statistiques
+
+Les statistiques du dashboard doivent être reliées aux données réelles de la base de données.
+
+Les valeurs affichées doivent donc être dynamiques et mises à jour selon les données réelles.
+
+41. ⭐ Dashboard vendeur — étoiles
+
+La notation du vendeur dans le dashboard doit commencer à :
+
+⭐⭐⭐⭐⭐
+
+soit 5 étoiles.
+
+La note peut ensuite descendre selon le comportement du vendeur.
+
+42. 🗑️ Suppression du bouton « Catalogue »
+
+Le bouton :
+
+Catalogue
+
+doit être complètement supprimé de la navigation.
+
+Il se trouve actuellement parmi les boutons de navigation situés en bas de l'application.
+
+43. 💰 Navigation vendeur — paiements à Rapid Pièces
+
+Après suppression de « Catalogue », ajouter dans la navigation inférieure un bouton permettant au vendeur de voir :
+
+Ce qu'il doit payer à Rapid Pièces
+
+Cette rubrique doit permettre au vendeur de connaître ses montants dus à Rapid Pièces.
+
+44. 🧾 Historique des factures
+
+Ajouter également un accès à :
+
+Historique des factures
+
+Le vendeur doit pouvoir consulter ses anciennes factures et l'historique correspondant.
+
+45. 💬 Historique des offres
+
+Ajouter un historique des offres.
+
+Lorsqu'un vendeur ouvre une demande/offre, il doit pouvoir retrouver :
+
+l'offre concernée ;
+les échanges avec l'acheteur ;
+les discussions ;
+les différentes propositions/contre-propositions ;
+l'évolution de la négociation.
+
+L'objectif est de pouvoir retracer toute la discussion liée à une offre.
+
+46. 🗂️ Historique dans le profil vendeur
+
+Ajouter également une rubrique historique dans le profil du vendeur.
+
+Elle doit lui permettre de retrouver notamment :
+
+ses anciennes demandes ;
+ses anciennes offres ;
+ses transactions/opérations passées ;
+les éléments qui ne sont plus actifs.
+47. ❄️ Gel des autres offres après acceptation
+
+Correction importante par rapport au comportement actuel :
+
+Problème constaté
+
+Actuellement, lorsqu'un acheteur accepte une offre :
+
+toutes les autres offres disparaissent.
+
+Ce comportement est incorrect.
+
+Nouveau comportement
+
+Lorsqu'une offre est acceptée :
+
+l'offre choisie reste visible ;
+elle est mise en évidence, notamment en vert ;
+les autres offres restent visibles ;
+elles sont gelées ;
+elles deviennent grises ;
+elles portent une indication :
+
+Terminé
+
+Elles ne doivent donc plus disparaître.
+
+48. 🚫 Empêcher une deuxième offre pour la même demande
+
+Si un vendeur a déjà proposé une offre pour une demande :
+
+➡️ il ne doit pas pouvoir proposer une nouvelle offre supplémentaire pour cette même demande lorsque la règle de blocage est applicable.
+
+Le système doit détecter qu'une offre existe déjà et empêcher la création d'une nouvelle offre.
+
+Un message explicatif devra être affiché à l'utilisateur.
+
+49. 💳 Conditions de paiement dans l'offre
+
+Le vendeur doit pouvoir préciser dans son offre les conditions de paiement.
+
+Notamment :
+
+Paiement à la livraison
+Paiement avant que la pièce ne sorte de la boutique
+
+Le mode de paiement défini par le vendeur dans son offre doit ensuite être visible par l'acheteur dans le processus de paiement.
+
+50. 🚚 Paiement à la livraison
+
+Le paiement à la livraison ne doit être proposé à l'acheteur que si le vendeur l'a spécifié dans son offre.
+
+Donc :
+
+Vendeur choisit paiement à la livraison
+→ l'acheteur peut voir/utiliser cette possibilité.
+
+Si le vendeur ne propose pas le paiement à la livraison :
+
+→ cette option ne doit pas être proposée à l'acheteur.
+
+51. 🔄 Statut complet d'une commande
+
+Après acceptation d'une offre, la commande doit suivre un véritable cycle de statut.
+
+Exemple :
+
+Offre acceptée
+↓
+Paiement en cours
+↓
+Payé
+↓
+Livraison en cours
+↓
+Livré
+
+L'offre choisie doit rester visuellement identifiable pendant tout ce processus.
+
+52. 💡 Vendeurs fictifs / prix indicatifs
+
+Lorsqu'un acheteur lance une demande, le système doit immédiatement lui présenter 2 ou 3 vendeurs indicatifs.
+
+Ces vendeurs sont fictifs/indicatifs et servent à éviter que l'acheteur ait l'impression qu'il ne se passe rien pendant l'attente des réponses réelles.
+
+Important
+
+Ces offres :
+
+ne sont pas de vraies offres de vendeurs ;
+ne doivent pas être présentées comme des vendeurs réellement disponibles ;
+servent de repère temporaire.
+53. 💰 Prix indicatif basé sur le marché
+
+Les prix affichés avec ces vendeurs indicatifs doivent être évalués par rapport au :
+
+prix réel du marché
+
+Ce système n'est pas basé sur l'IA.
+
+Il doit utiliser une logique/source de prix de marché à définir.
+
+L'objectif est de donner rapidement à l'acheteur une idée du prix auquel la pièce peut être trouvée.
+
+54. ⏳ Apparition progressive des vraies offres
+
+Les vendeurs indicatifs servent de présentation initiale.
+
+Ensuite, les vraies offres des vendeurs commencent à apparaître.
+
+Le système peut ainsi afficher progressivement :
+
+vendeur 1 ;
+vendeur 2 ;
+vendeur 3 ;
+
+puis les véritables vendeurs :
+
+vendeur 4 ;
+vendeur 5 ;
+vendeur 6 ;
+etc.
+
+L'objectif est de maintenir l'engagement de l'acheteur pendant l'attente.
+
+55. 📊 Score directement sur l'offre
+
+Le score de l'offre doit être affiché directement sur la carte/l'affichage de l'offre.
+
+L'acheteur doit donc pouvoir comparer les offres sans devoir entrer dans chaque profil.
+
+Le score de l'offre repose notamment sur :
+
+prix ;
+qualité ;
+réactivité ;
+autres critères pertinents.
+56. ⭐ Rating directement lié au vendeur
+
+Sur l'offre, afficher également le rating du vendeur en étoiles.
+
+Exemple :
+
+⭐⭐⭐⭐⭐
+
+Le vendeur est donc évalué séparément de l'offre elle-même.
+
+57. 📌 Distinction entre vendeur et offre
+
+La logique finale doit être clairement séparée :
+
+Vendeur
+
+Rating en étoiles
+
+Il représente la réputation/historique du vendeur.
+
+Offre
+
+Score chiffré
+
+Il représente la qualité de cette proposition particulière selon les critères définis.
+
+58. 🔔 Expiration + historique
+
+Lorsqu'une offre expire :
+
+elle n'est plus active ;
+elle reste visible dans l'historique pendant la période prévue ;
+l'utilisateur sait qu'il a reçu cette offre ;
+les notifications d'expiration sont conservées dans la cloche.
+
+Après la période de conservation prévue :
+
+➡️ suppression complète.
+
+59. ⚠️ Points laissés volontairement en attente
+
+Tu m'as explicitement demandé de laisser certains éléments pour plus tard. Je ne les invente donc pas.
+
+À préciser ultérieurement :
+La règle exacte du système de garantie et son calcul complet.
+Le détail exact de la page Rapide Pièces Garantie.
+Le système précis de génération des codes Acheteur X / Vendeur Y.
+Le détail de la source/formule utilisée pour les prix fictifs basés sur le marché réel.
+Le détail exact de la sanction à 3 étoiles.
+Le fonctionnement détaillé de l'interface Super Admin, que tu as demandé de laisser de côté pour l'instant.
+La phrase exacte affichée lorsqu'une demande est déjà satisfaite.
+La règle précise de comptage des 3 propositions maximum dans les contre-offres, qui appartient au cahier précédent mais reste à verrouiller si nécessaire.
+🧭 Vue d'ensemble du nouveau cahier
+
+Les grosses familles de corrections sont donc :
+
+🌍 Pays & offres
+→ Local / International
+
+⏱️ Expiration
+→ Offre 24 h → historique → suppression à 48 h
+
+🔄 Demandes
+→ expiration 24 h → possibilité de renouvellement
+
+🔔 Notifications
+→ expiration visible vendeur + acheteur
+
+🔩 Pièces
+→ tri marque/qualité + « Autre » + « Toutes »
+
+📸 Demandes
+→ 1 à 4 photos
+
+💳 Paiement
+→ VIN obligatoire > 50 000 FCFA
+→ délai 48 h
+→ sanctions 7 jours
+
+🤝 Offres
+→ ouverte / fermée
+→ contre-offre si ouverte
+→ modification/annulation avant paiement
+
+🟢 Commande acceptée
+→ offre choisie en vert
+→ autres offres en gris + « Terminé »
+→ elles restent visibles et sont gelées
+
+⭐ Réputation
+→ vendeur = étoiles à partir de 5
+→ offre = score chiffré
+
+📊 Données
+→ statistiques réellement connectées à la BDD
+
+🏪 Vendeur
+→ numéro de paiement confidentiel
+→ CGV
+→ historique des offres
+→ historique des factures
+→ montant dû à Rapid Pièces
+→ suppression du Catalogue
+
+🛡️ Garantie
+→ Rapide Pièces Garantie
+→ page dédiée
+→ calcul selon année + montant
+
+🎨 Interface
+→ rafraîchissement
+→ nouveaux libellés
+→ suppression mode de livraison de l'offre
+→ « Satisfaction client »
+→ « Retour de pièce »
