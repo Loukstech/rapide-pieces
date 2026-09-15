@@ -1,0 +1,7 @@
+{
+  "name": "Gestion de tâches",
+  "description": "Une application simple et élégante de gestion de tâches avec filtres et priorités.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
+
